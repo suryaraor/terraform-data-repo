@@ -43,9 +43,8 @@ jobs:
       id: validate
       if: (success() || failure())
       run: terraform validate
-    # Run a terraform plan
-    # Run even if formatting fails
-    - name: Terraform plan
+    - name: Terraform Apply
       id: plan
       if: (success() || failure())
-      run: terraform plan
+      run: terraform apply
+
