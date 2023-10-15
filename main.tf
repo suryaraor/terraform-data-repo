@@ -1,4 +1,4 @@
-module "s3-bucket" {
-  source  = "terraform-aws-modules/s3-bucket/aws"
-  version = "3.14.1"
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "surya-aws-terraform-bucket-001"
+  acl    = "private"
 }
