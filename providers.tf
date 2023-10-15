@@ -11,3 +11,5 @@ provider "aws" {
   access_key = "AKIATBNIB4Z3363MER4L"
   secret_key = "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"
 }
+
+
